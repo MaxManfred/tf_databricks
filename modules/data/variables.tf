@@ -1,4 +1,3 @@
-# Authentication
 variable "DATABRICKS_HOST" {
   description   = "The Databricks workspace to interact with"
   type          = string
