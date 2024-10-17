@@ -6,7 +6,7 @@ module "notebooks" {
    notebook_language = var.notebook_language
 }
 
-/* # Define the Spark clusters to manage
+# Define the Spark clusters to manage
 module "clusters" {
    source = "../modules/clusters"
    cluster_autotermination_minutes  = var.cluster_autotermination_minutes
@@ -21,4 +21,4 @@ module "jobs" {
    task_key        = var.task_key
    cluster_id      = module.clusters.cluster_id
    notebook_path   = module.notebooks.notebook_path
-} */
+}
