@@ -1,18 +1,18 @@
 # tf_databricks
-Terraform with Databricks
+### Terraform with Databricks Demo
 
-To initialize
+- To initialize Terraform with Databricks provider, each time you change folder type
 
-terraform init
+    <code>terraform init</code>
 
-To compute plan
+- To compute a plan to be saved into a tf_databricks.tfplan file, type
 
-terraform plan --detailed-exitcode -out=hello_databricks.tfplan
+    <code>terraform plan --detailed-exitcode -out=tf_databricks.tfplan file</code>
 
-To apply plan
+- To apply the saved plan of the previous step, type
 
-terraform apply "hello_databricks.tfplan"
+    <code>terraform apply "tf_databricks.tfplan file"</code>
 
-To destroy created resources
+- To completely destroy the resources created by the applied plan, type
 
-terraform destroy
+    <code>terraform destroy</code>
